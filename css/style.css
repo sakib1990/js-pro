@@ -1,0 +1,238 @@
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author: 
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index 
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer 
+*/
+
+
+
+/* 1. Theme default css */
+
+
+
+/* Dropdown menu */
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	font-family: "Arial";
+}
+.myNav {
+	background-color: #222;
+	color: #fff;
+	display: flex;
+	min-height: 50px;
+
+}
+.toggle {
+	display: none;
+}
+
+.myNav ul {
+	margin: 0;
+	padding: 0;
+}
+
+
+.myNav ul li {
+	list-style: none;
+	
+}
+.myNav > ul > li {
+	float: left;
+	position: relative;
+}
+.myNav > ul > li > a {
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	text-decoration: none;
+}
+.dd-btn {
+
+}
+.dd-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 200px;
+	background-color: #fff;
+	border: 1px solid #f1f1f1;
+	box-shadow: 0px 0px 3px #ccc;
+}
+
+.dd-menu li a {
+	display: block;
+	padding: 15px 15px;
+	text-decoration: none;
+	color: #222;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.dd-menu li:last-child a {
+	border-bottom: 0px;
+}
+.dd-menu li a:hover {
+	background-color: #f1f1f1;
+}
+.hide {
+	display: none;
+}
+
+
+
+
+
+
+@media screen and (min-width: 0px) and (max-width: 450px){
+	.myNav {
+		position: fixed;
+		height: 100%;
+		left: -250px;
+		width: 250px;
+		transition: .5s;
+	}
+	.toggle {
+		display: block; 
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+		text-align: center;
+		position: fixed;
+		left: 15px;
+		top: 15px;
+		background-color: #222;
+		color: #fff;
+		cursor: pointer;
+		transition: .5s;
+	}
+	.myNav > ul > li {
+		float: none;
+		width: 250px;
+}
+.myNav > ul > li > a {
+	background-color: #111;
+}
+
+.dd-menu {
+	position: relative;
+	width: 250px;
+}
+
+
+
+/* slider */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+.slider {
+	max-width: 600px;
+	position: relative;
+	margin: 0 auto;
+	height: 400px;
+}
+.slider .slider-item img {
+	max-width: 100%;
+	height: auto;
+
+}
+.slider .slide-left,
+.slider .slide-right {
+	position: absolute;
+	top: 50%;
+	height: 50px;
+	line-height: 50px;
+	width: 50px;
+	text-align: center;
+	background-color: #222;
+	color: #fff;
+	transform: translateY(-50%);
+	font-size: 15px;
+}
+
+.slider .slide-left {
+	left: 0;
+}
+.slider .slide-right {
+	right: 0;
+}
+.blue {
+	line-height: 400px;
+	font-size: 45px;
+	color: #fff;
+	text-align: center;
+	background: #3498db;
+}
+
+
+/* image modal */
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 500px;
+}
+
+.img-cover {
+	max-width: 500px;
+	cursor: pointer;
+}
+
+.img-cover .main-img {
+	max-width: 100%;
+	height: auto;
+
+}
+
+#display-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.5);
+	display: none;
+}
+
+#display-modal .modal-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	max-width: 50%;
+	height: auto;
+}
+
+#display-modal .close {
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	height: 75%;
+	width: 75%;
+	background-color: #111;
+	color: #fff;
+	text-align: center;
+	line-height: 75px;
+	font-family: "Arial";
+	font-size: 25px;
+	cursor: pointer;
+
+}
